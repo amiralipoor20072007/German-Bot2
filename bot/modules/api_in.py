@@ -24,6 +24,23 @@ class Input(Resource):
         data:dict
         data = request.get_json()
 
+        try:
+            print('sendMessage :',data.get('sendMessage'))
+        except:
+            print('sendMessage Not Found')
+
+        try:
+            print('sendStatusMessage :',data.get('sendStatusMessage'))
+        except:
+            print('sendStatusMessage Not Found')
+
+        try:
+            print('Link :',data.get('Link'))
+        except:
+            print('Link Not Found')
+        
+
+
         #SendMessage And Status
         if data.get('sendMessage',False) or data.get('sendStatusMessage',False) or data.get('Link',''):
             Hash = data.get('Hash')
