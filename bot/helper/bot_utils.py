@@ -110,7 +110,7 @@ def get_progress_bar_string(status):
     return f"[{p_str}]"
 
 def get_readable_message(Chat_ID):
-    msg = rpost('urlofiran',json={'chat_id':Chat_ID}).json()
+    msg = rpost('http://45.159.149.18:5000',json={'chat_id':Chat_ID}).json()
     text = msg.get('msg')
     return text , None
 
