@@ -28,7 +28,8 @@ DOWNLOAD_DIR = '/usr/src/app/downloads/'
 config_dict = {'BASE_URL': BASE_URL,
                'DOWNLOAD_DIR': DOWNLOAD_DIR,
                'STATUS_LIMIT': STATUS_LIMIT,
-               'WEB_PINCODE': WEB_PINCODE}
+               'WEB_PINCODE': WEB_PINCODE,
+               'STATUS_UPDATE_INTERVAL' : 5}
 
 BOT_TOKEN = '5556552657:AAFll3gaZEAlYdDYtPOMcIaOj906rnPo8EU'
 if len(BOT_TOKEN) == 0:
