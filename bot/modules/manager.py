@@ -2,7 +2,6 @@ from requests import post as rpost
 from random import choices
 import string
 
-from bot import LOGGER
 from bot.helper.message_utils import sendMessage , sendStatusMessage
 
 
